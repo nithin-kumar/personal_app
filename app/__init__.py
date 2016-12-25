@@ -5,6 +5,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 # Import Flask-MySQLdb
+from flask_mysqldb import MySQL
 
 # Define the WSGI application object
 app = Flask(__name__)

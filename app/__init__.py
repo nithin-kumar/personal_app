@@ -18,8 +18,8 @@ db = SQLAlchemy(app)
 
 # Import a module / component using its blueprint handler variable (mod_auth)
 from app.mod_portfolio.controllers import mod_portfolio as prortfolio_module
-
+from app.mod_classification.controllers import mod_classification as classification_module
 # Register blueprint(s)
 app.register_blueprint(prortfolio_module)
-
+app.register_blueprint(classification_module)
 db.create_all()
